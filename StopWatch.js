@@ -52,19 +52,6 @@ document.getElementById("pause").addEventListener("click", () => {
     }
 });
 
-/* LAP Timer
-document.getElementById("Lap Timer").addEventListener("click", ()=>{
-   if (Running) {
-   Running= false;
-   const lap Timer=`${formatTime(H)}:${formatTime(Min)}:${formatTime(Sec)}.${formatMilliseconds(Ms)}`;
-    const lapsDiv = document.getElementById("laps");
-    const lapEntry = document.createElement("div");
-    lapEntry.innerText = `Lap: ${lapTime}`;
-    lapsDiv.appendChild(lapEntry);
-   } 
-});
-*/
-
 function formatTime(time) {
     return time < 10 ? `0${time}` : time;
 }
